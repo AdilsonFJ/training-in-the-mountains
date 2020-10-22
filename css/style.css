@@ -1,0 +1,76 @@
+
+
+/*
+id(#)  = identidade unica.
+#talitem{
+
+}
+class(.)  = identidade divisória que pode ser usada mais de uma vez em outros estilos.
+.taloutroitem{
+
+}
+USANDO MAIS DE UMA CLASSE EM UM MESMO ELEMENTO
+class="classe 1 classe 2"
+
+color: ;  = usada para dar ao elemento a cor.
+font-size: ;  = usado para definir tamanho da fonte.
+font-family: ;  = usado para alterar o estilo de fonte.
+
+IMPORTANDO FONTE DO GOOGLE
+exemplo
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+USANDO DEGRADE(se caso a fonte principal falhar)
+font-family: Helvetica, sans-serif;
+
+width: ;  = largura
+px = pixels wide
+
+BORDAS
+border-color: ; = cor da borda.
+border-width: ; = largura da borda.
+border-style: ; = estilo da borda.
+border-radius: ; = borda redonda
+
+background-color: ;  = usado para dar ao fundo do elemento.
+
+INICIO EM BOX MODEL
+padding  = esse elemento controla o preenchimento do espaço entre conteúdo do elemento e sua borda.
+border
+margin  = controla a quantidade de espaço entre a borda de um elemento e os elementos ao redor.
+
+relative e absolute
+ABSOLUTE
+Unidades absolutas vinculadas a unidades físicas de comprimento
+in = inches
+mm = millimeters
+As unidades de comprimento absoluto aproximam-se da medida real em uma tela, mas existem algumas diferenças dependendo da resolução da tela.
+
+RELATIVE
+em = baseado no tamanho do elemento da fonte
+rem = 
+
+no meio de duas classes decisórias, ganha a segunda
+!important  = adicionando esse elemento o estilo não sera alterado.
+
+HERANÇA CSS
+:root{} = uma variável disponível para todas as folhas
+CRIANDO UMA VARIÁVEL PADRÃO NO CSS
+--nome : cor;
+-- = classe
+REFERENCIANDO
+ex:   background: var(--cor-referencia);
+RESERVA, CASO FALHE
+background: var(--cor-referencia, outra cor);
+
+MEDIA QUERY BÁSICO
+max-width: ;  = largura maxima
+@media(){
+    :root{
+
+    }
+}
+
+
+*/
+

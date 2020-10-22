@@ -1,0 +1,60 @@
+/*
+TEXT-ALIGN
+text-align: ; = alinha texto
+justify = justifica o conteúdo fazendo-o ir de esquerda a direita, exceto a ultima linha.
+center = alinha para o centro
+right = alinha para a direita
+left = a padrão mais usada, para o esquerdo
+
+font-weight: bold; = "negrito" a tag que chama a atenção.
+<strong></strong> = para o html
+
+text-decoration: underline; = usado para lembrar de algo, uma linha abaixo do texto
+<u></u> = no html
+
+font-style: italic; = usado para o texto ficar em itálico
+<em></em> = para o html
+
+text-decoration: line-through; = usado para mostrar que o texto não esta mais valido
+<s></s> = para o html
+
+<hr>  = cria uma linha horizontal
+
+font-size: ; = usado para definir tamanho da fonte
+
+box-shadow: ; = propriedade que aplica uma ou mais sombra a um elemento
+usado nessa ordem as propriedades
+offset-x = empurra a sombra horizontalmente 
+offset-y = empurra a sombra verticalmente 
+blur-radius
+spread-radius
+color
+
+opacity: ; = opacidade, de 0 a 1, onde 1 é opaco e o valor 0 é transparente, usa-se o valor entre 0 e 1.
+
+text-transform: ; = usado para transformar um texto.
+abaixo as propriedades
+lowercase = "transform me"
+uppercase = "TRANSFORM ME"
+capitalize = "Transform Me"
+initial = Use the default value
+inherit = Use the text-transform value from the parent element
+none = Default: Use the original text
+
+line-height: ; = propriedade que da espaçamento entre as linhas.
+
+POSITIONS(box model)
+  position: relative;  = Quando a posição de um elemento é definida como relativa, permite que você especifique como o CSS deve movê-lo em relação à sua posição atual no fluxo normal da página. Ele emparelha com as propriedades de deslocamento CSS de esquerda ou direita e superior ou inferior. Eles dizem quantos pixels, porcentagens ou ems mover o item para longe de onde ele está normalmente posicionado. O exemplo a seguir move o parágrafo 10 pixels para longe da parte inferior
+
+position: absolute; = trava o elemento
+
+position: fixed; = posição fixa, que é um tipo de posicionamento absoluto que bloqueia um elemento em relação à janela do navegador. Semelhante ao posicionamento absoluto, ele é usado com as propriedades de deslocamento CSS e também remove o elemento do fluxo normal do documento. Outros itens não "percebem" mais onde estão posicionados, o que pode exigir alguns ajustes de layout em outro lugar.
+
+Uma diferença importante entre as posições fixas e absolutas é que um elemento com uma posição fixa não se moverá quando o usuário rolar.
+
+float: ;  = Os elementos flutuantes são removidos do fluxo normal de um documento e colocados à esquerda ou à direita do elemento pai que os contém. É comumente usado com a propriedade width para especificar quanto espaço horizontal o elemento flutuado requer.
+
+z-index = propriedade pode especificar a ordem de como os elementos são empilhados uns sobre os outros. Deve ser um número inteiro (ou seja, um número inteiro e não um decimal), e valores mais altos para a propriedade de índice z de um elemento movem-no para cima na pilha do que aqueles com valores mais baixos.
+
+
+*/
