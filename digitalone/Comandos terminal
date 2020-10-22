@@ -1,0 +1,47 @@
+Comandos terminal
+-Windows
+dir listar diretórios em pasta situados
+cd(change directory) / abre a base do diretório C  - atalho TAB com primeira letra
+cd nome da pasta 
+cd .. para retroceder um nível
+cls(clear screen) limpa terminal
+mkdir(make directory) cria uma pasta 
+echo comando que devolve a mensagem criada
+> comando de direcionamento de fluxo, ex: hello > nome.txt
+del deleta arquivo
+rmdir(remove directory) /S /Q remove todo repositório
+
+
+-Linux
+ls lista diretórios em pasta situados(ls -a, tem mesmo efeito que la)
+la lista arquivos ocultos
+cd(change directory) / abre a base do diretório  - atalho TAB com primeira letra
+cd nome da pasta 
+cd .. para retroceder um nível
+clear limpa terminal - atalho ctrl+l
+mkdir(make directory) cria uma pasta
+> comando de direcionamento de fluxo, ex: hello > nome.txt
+rm - rf(recursive force) 
+
+-GIT(sistema distribuído seguro)
+SHA1 - algoritmo de hash seguro, é um conjunto de funções hash criptográficas projetadas pela nsa. a encriptação gera um conjunto de caracteres de 40 dígitos . como usar? chama o echo e passa em string e a seguir com pipeline utilizando openssl sha1 ex: echo "ola mundo" | openssl sha1.
+
+
+-blobs(contem meta dados do git)(somente armazena sha1)
+echo 'conteúdo' | git hash-object --stdin (saida em texto)
+echo -e 'blob 9\0conteúdo' | openssl sha1( é o mesmo que git hash-object)
+(se alterar uma blob altera o sha1 que muda a tree, e reflete no commits(linha tempo))
+-trees(apontam para os blobs e tem sha1 também)
+-commits(aponta para uma tree, parente, autor e etc)(ou seja a alteração)
+
+
+--GIT
+git init  inicia o git através do local desejado
+git add *  adiciona um arquivo 
+git commit -m "o -m é mensagem em string" faz commit 
+git config  lista configurações do GIT
+git remote add origin  (url ) adiciona um repositório já existente
+git remote -v  é um alias (apelido)
+git push origin main  adiciona o repositório para servidor
+git pull origin main  adiciona do servidor para repositório local
+git clone  clona repositório
