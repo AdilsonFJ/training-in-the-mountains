@@ -45,3 +45,4 @@ git remote -v  é um alias (apelido)
 git push origin main  adiciona o repositório para servidor
 git pull origin main  adiciona do servidor para repositório local
 git clone  clona repositório
+git rm -r --cached "arquivo" faz exclusão
