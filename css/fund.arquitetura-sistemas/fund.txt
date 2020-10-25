@@ -1,0 +1,84 @@
+O que são serviços Web?
+São soluções para aplicações se comunicarem, independente de linguagem, software ou hardware.  
+
+Os serviços Web foi criado pelas trocas de mensagens, utilizando XML(Extensible markup language) sobre protocolo HTTP, sendo identificado por por URI(uniform resource identifier)
+
+Podemos dizer que o serviços Web é uma API, que comunica por meio de redes sobre o protocolo HTTP.
+
+-----
+As vantagens de se utilizar serviços Web
+Linguagem comum
+integração
+reutilização de implementação
+segurança
+custo
+
+------
+Tecnologias mais utilizadas para desenvolvimento de serviços Web
+SOAP
+REST
+XML
+JSON
+
+----
+
+O que é SOAP
+simple  object access protocol, é um protocolo em XML para acessar serviços web principalmente por HTTP, podemos dizer que é definição de como se comunicam.
+
+---
+As vantagens de se utilizar SOAP
+Permite integração entre aplicações
+independente de plataforma e software
+meio de transporte genérico, ou seja alem de HTTP
+
+---
+O que é XML
+Extensible markup language
+facilita a separação de conteúdo
+não tem limitações de tags
+linguagem comum para integração entre aplicação
+
+---
+Entender a estrutura de uma mensagem SOAP
+SOAP Envelope
+SOAP Header
+SOAP Body
+
+---
+
+O que é um WSDL
+web services description languages, é usado para descrever web services, funciona como um contrato de serviços.
+a descrição é feito em um documento XML, onde é feita as especificações.
+
+---
+O que é um XSD
+XML schema definition, no formato XML, usado para definir a estrutura de dados, que sera validade no XML.
+o XSD funciona como uma documentação de como deve ser montado o SOAP mensagem.
+
+---
+
+O que é REST 
+representational state transfer, é um estilo de arquitetura de software que define a implementação, pode trabalhar com formato XML, JSON ou outros. 
+
+---
+vantagens em se utilizar REST
+permite integrações entre aplicações e também entre cliente servidos em paginas, utiliza HTTP para definir a operação, e arquitetura de fácil entendimento.
+
+----
+O que é API
+Application programming interface, são conjunto de rotinas documentados e disponibilizados por uma aplicação, para que outras aplicações possam consumi-las.
+
+---
+Principais métodos HTTP 
+GET - solicita a representação de um recurso
+POST - solicita a criação de um recurso
+DELETE - solicita a exclusão de um recurso
+PUT - solicita a atualização de um recurso
+
+---
+JSON
+JavaScript object notation, formato leve par troca de mensagens entre sistemas, usa-se de uma estrutura de chave e valor e também lista ordenadas, .
+
+---
+POSTMAN
+SOAP 
