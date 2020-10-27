@@ -128,3 +128,55 @@
 // res = salb - aux;
 
 // alert(res);
+
+//14-)
+// let a = 1;
+// switch (a) {
+//     case 1:
+//         console.log("Domingo");
+//         break;
+    
+//     case 2:
+//         console.log("Segunda");
+//         break;
+    
+//     case 3:
+//         console.log("Terça");
+//         break;
+    
+//     case 4:
+//         console.log("Quarta");
+//         break;
+    
+//     case 5:
+//         console.log("Quinta");
+//         break;
+    
+//     case 6:
+//         console.log("Sexta");
+//         break;
+    
+//     case 7:
+//         console.log("Sabado");
+//         break;
+    
+//     default: 
+//         console.log("Dias da semana inexistente");
+//         break;
+// }
+
+
+//15-)
+// for (let index = 1; index <= 100; index=index + 2){
+//     console.log(index);
+// }
+
+//16-)
+// let a = 1;
+// while (a <= 100) {
+//     console.log(a);
+
+//     a = a + 2;
+// }
+
+//17-)
