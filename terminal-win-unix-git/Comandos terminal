@@ -42,8 +42,17 @@ git commit -m "o -m é mensagem em string" faz commit
 git config  lista configurações do GIT
 git remote add origin  (url ) adiciona um repositório já existente
 git remote -v  é um alias (apelido)
-git push origin main  adiciona o repositório para servidor
-git pull origin main  adiciona do servidor para repositório local
+git push origin main  adiciona o repositório para servidor e branch mencionada
+git pull origin main  adiciona do servidor para repositório local  e branch mencionada
 git clone  clona repositório
 git rm -r --cached "arquivo" faz exclusão
 touch  arquivo.html   cria um arquivo
+git branch  nome d a branch   cria ramificação
+git checkout -b  já cria a branch e já troca para ela
+git branch -D exclui a branch
+git checkout com a branch escolhida, ele troca a branch
+git merge e o nome da branch
+git --amend edita mensagem do commit
+git diff para ver as modificações feitas no arquivo
+git reset HEAD para retirar um arquivo adicionado para commitar (após utilizar git add)
+git --checkout utilizar quando você quer 'resetar' as alterações de um arquivo
