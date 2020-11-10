@@ -109,23 +109,132 @@ começa abrindo colchetes
 POSTMAN
 SOAP 
 
-[x] Conceito API (Endpoint, Headers, Body)
+
 [x] Visão geral REST / HTTP
 [x] Operações GET, POST, PUT, DELETE
 [x] Diferenças JSON / XML
 [x] Conceito RestFull
 [x] Swagger / OAS
 
-1-Dúvidas sobre Headers
 
-2-Fazer XML do JSON
+[x] Conceito API (Endpoint, Headers, Body)
+O endpoint
+A URL nada mais é que o caminho para fazer a requisição, porém é interessante ressaltar que ela segue a seguinte estrutura:
 
-3-Bootcamp POSTMAN
+Base URL
+Esse é o início da URL da requisição, aqui você basicamente falará a informação de domínio que se repete em qualquer requisição. Por exemplo:
 
-4-Dificuldade Swagger
+https://api.minhagastronomia.com
 
-5-Pesquisar Enterprise Service Bus (ESB) e iPaaS
+Resource ou Path
+ O recurso é o tipo de informação que você está buscando, ou seja, vamos simular que estamos buscando saber sobre vinhos, então acrescentamos o recurso vinhos:
 
-6- Pesquisar sobre SaaS
+https://api.minhagastronomia.com/vinhos
 
-7-Documentação de APIs https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets#requests
+Query String
+A query string são os parâmetros daquela requisição, então, se eu quisesse saber os melhores vinhos da região sul do Brasil, eu incluiria esses parâmetros ?pais=brasil&regiao=sul e nossa URL ficaria assim:
+
+https://api.minhagastronomia.com/vinhos?pais=brasil&regiao=sul
+
+Como podem ver acima, por se tratar de parâmetros da URL você usa o (?) e caso queira utilizar mais de um parâmetro você utiliza o (&).
+
+OBS: A Query String não é somente utilizada para filtros, ela pode ser utilizada como parâmetros de paginação, versionamento, ordenação, e muito mais.
+
+O método
+O método te ajuda a informar o tipo de ação que você está fazendo naquela requisição.
+
+Dentre os principais métodos, temos:
+
+Get (Buscar dados)
+Post (Enviar dados)
+Put e Patch (Atualizar dados)
+Delete (Deletar dados)
+OBS: Existem vários outros métodos que não irei citar no artigo, mas nesse link você pode ver a lista completa.
+
+Headers
+Headers ou cabeçalhos permitem que você envie informações adicionais na requisição. Ele pode ser utilizado para inúmeras funções, como: autenticação, formatação de objeto, e muito mais.
+
+Não é recomendado que você crie headers customizados, e aqui você pode ver todos os padrões de utilização.
+
+Para utilizá-lo é simples você coloca a propriedade, seguido dois pontos e o valor, tudo entre aspas, exemplo:
+
+"Authorization: token123242343534".
+
+Body
+O body é o corpo da mensagem que você quer enviar na requisição. Ele é utilizado somente nos métodos de POST, PUT, PATCH, ou seja, ele contém o dado a ser processado pela API, e por isso ele não é necessário em métodos de leitura de dados.
+
+
+
+[x]Fazer XML do JSON
+[
+        "endereco": {
+            "cep": "99999-99",
+            "logradouro": "Av. Paulista",
+            "Bairro": "Jardim Paulista",
+            "Cidade": "São Paulo",
+            "numero": 99
+        }
+    ]
+
+    ----
+
+<?xml version="1.0" encoding="UTF-8"?>
+<lista-endereco>
+    <cep>99999-99</cep>
+    <logradouro>Av Paulista</logradouro>
+    <bairro>Jardim Paulista</bairro>
+    <cidade>São Paulo</cidade>
+    <numero>99</numero>
+</lista-endereco>
+
+
+[]Bootcamp POSTMAN
+
+
+
+[x]Dificuldade Swagger
+https://blog.caelum.com.br/modelando-apis-rest-com-swagger/amp/
+
+Trata-se de uma aplicação open source que auxilia desenvolvedores nos processos de definir, criar, documentar e consumir APIs REST. Em suma, o Swagger visa padronizar este tipo de integração, descrevendo os recursos que uma API deve possuir, como endpoints, dados recebidos, dados retornados, códigos HTTP e métodos de autenticação, entre outros.
+
+https://gr1d.io/insurance/trends/post/desenvolvedor-saiba-como-swagger-pode-ajudar-voce-4a3b1b49c0
+
+[x]Pesquisar Enterprise Service Bus (ESB) 
+https://vertigo.com.br/tudo-sobre-esb/
+
+Um Enterprise Service Bus (ESB) é fundamentalmente uma arquitetura, com um conjunto de regras e princípios para a integração de inúmeras aplicações em uma infraestrutura semelhante a um barramento.
+
+
+[x]iPaaS
+https://www.linkapi.solutions/ipaas-plataforma-de-integracao/
+
+O iPaaS (Integration Platform as a Service) ou plataforma de integração de sistemas como serviço, é uma solução em nuvem na qual os usuários podem desenvolver fluxos de integração que conectam aplicações em cloud, SaaS ou on-premise. Em seguida, fazer o deploy sem precisar instalar localmente nem gerenciar nenhum hardware ou software.
+
+https://vertigo.com.br/o-que-e-ipaas/
+
+
+[x] Pesquisar sobre SaaS
+https://www.salesforce.com/br/saas/
+
+SaaS, ou Software as a Service, é uma forma de disponibilizar softwares e soluções de tecnologia por meio da internet, como um serviço. Com esse modelo, sua empresa não precisa instalar, manter e atualizar hardwares ou softwares. O acesso é fácil e simples: apenas é necessária a conexão com a internet.
+
+[]Documentação de APIs https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets#requests
+
+
+
+https://editor.swagger.io/
+1 - Criar Swagger da API de Endereço
+
+1.1 - Somente Método GET e POST
+
+2 - Low Code
+
+3 - OnPremisse vs Cloud
+
+4 - Ler artigo: https://sdtimes.com/data/2020-the-year-of-integration/
+
+5 - Instalar Anypoint Studio
+
+6 - Pesquisar sobre OUTSYSTEMS
+
+Mulesoft | Integração | API
