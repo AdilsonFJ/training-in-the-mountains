@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "Cidade": "Lins",
+        "Endereco": "Rua jose"
+    },
+    {
+        "id": 2,
+        "Cidade": "Marilia",
+        "Endereco": "Rua Waldemar"
+    },
+    {
+        "id": 5,
+        "Cidade": "São Paulo",
+        "Endereco": "Av. paulista"
+    }
+]

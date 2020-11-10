@@ -21,7 +21,11 @@ XML
 JSON
 
 ----
+Oque é HTTP
+HTTP é um protocolo que permite a obtenção de recursos, como documentos HTML. É a base de qualquer troca de dados na Web e um protocolo cliente-servidor, o que significa que as requisições são iniciadas pelo destinatário, geralmente um navegador da Web. Um documento completo é reconstruído a partir dos diferentes sub-documentos obtidos, como por exemplo texto, descrição do layout, imagens, vídeos, scripts e muito mais.
 
+
+---
 O que é SOAP
 simple  object access protocol, é um protocolo em XML para acessar serviços web principalmente por HTTP, podemos dizer que é definição de como se comunicam.
 
@@ -33,7 +37,10 @@ meio de transporte genérico, ou seja alem de HTTP
 
 ---
 O que é XML
-Extensible markup language
+Linguagens de marcação são sistemas usados para definir padrões e formatos de exibição dentro de um documento. Em resumo, funcionam para definir como um determinado conteúdo vai ser visualizado na tela ou como os dados serão distribuídos. Essa codificação interna é feita pelo uso de marcadores ou tags.
+
+A grande vantagem do XML é facilitar o compartilhamento de dados. Seu armazenamento é feito em texto, permitindo que a leitura seja feita por diferentes aplicativos. Os arquivos nesse formato podem ser atualizados sem perda de informações importantes.
+
 facilita a separação de conteúdo
 não tem limitações de tags
 linguagem comum para integração entre aplicação
@@ -52,11 +59,15 @@ a descrição é feito em um documento XML, onde é feita as especificações.
 
 ---
 O que é um XSD
-XML schema definition, no formato XML, usado para definir a estrutura de dados, que sera validade no XML.
 o XSD funciona como uma documentação de como deve ser montado o SOAP mensagem.
 
 ---
+oque é Swagger / OAS?
+Swagger é uma das ferramentas mais utilizadas para o desenvolvimento de OpenAPI Specification(OAS), Swagger permite que você descreva a estrutura de APIs de uma forma facilitada onde é possível a interpretação tanto por humanos quanto por máquinas.
 
+Swagger é um framework para descrição, consumo e visualização de serviços RESTful. E seu grande objetivo é permitir que a documentação possa evoluir no mesmo ritmo da implementação, já que pode ser gerada automaticamente com base em anotações do código
+
+---
 O que é REST 
 representational state transfer, é um estilo de arquitetura de software que define a implementação, pode trabalhar com formato XML, JSON ou outros. 
 
@@ -77,8 +88,44 @@ PUT - solicita a atualização de um recurso
 
 ---
 JSON
-JavaScript object notation, formato leve par troca de mensagens entre sistemas, usa-se de uma estrutura de chave e valor e também lista ordenadas, .
+JavaScript object notation, formato leve par troca de mensagens entre sistemas, usa-se de uma estrutura de chave e valor e também lista ordenadas.
+
+
+---
+Exemplo de um JSON
+começa abrindo colchetes 
+    qual a chave?(endereco) e o que contem dentro dessa chave?(outra chave), que contem informação e valor.
+    [
+        "endereco": {
+            "cep": "99999-99",
+            "logradouro": "Av. Paulista",
+            "Bairro": "Jardim Paulista",
+            "Cidade": "São Paulo",
+            "numero": 99
+        }
+    ]
 
 ---
 POSTMAN
 SOAP 
+
+[x] Conceito API (Endpoint, Headers, Body)
+[x] Visão geral REST / HTTP
+[x] Operações GET, POST, PUT, DELETE
+[x] Diferenças JSON / XML
+[x] Conceito RestFull
+[x] Swagger / OAS
+
+1-Dúvidas sobre Headers
+
+2-Fazer XML do JSON
+
+3-Bootcamp POSTMAN
+
+4-Dificuldade Swagger
+
+5-Pesquisar Enterprise Service Bus (ESB) e iPaaS
+
+6- Pesquisar sobre SaaS
+
+7-Documentação de APIs https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets#requests
